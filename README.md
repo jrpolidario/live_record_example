@@ -3,8 +3,9 @@
 ```bash
 rails new live_record_example --database=postgresql
 cd live_record_example
-[ add `live_record`, `jquery-rails`, and `redis` to Gemfile ]
+[ add `live_record`, `jquery-rails` to Gemfile ]
 [ insert `//= require jquery` to `application.js` ]
+[ change `cable.yml` to `async` from `redis` ]
 bundle
 rails generate live_record:install
 rake db:create db:migrate
