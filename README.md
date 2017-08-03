@@ -1,24 +1,12 @@
-# README
+# Steps
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+rails new live_record_example --database=postgresql
+cd live_record_example
+[ add `live_record` to Gemfile ]
+bundle
+rails generate live_record:install
+rake db:create db:migrate
+rails generate scaffold posts title:string content:text
+git push heroku master
+```
