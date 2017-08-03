@@ -12,6 +12,7 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require jquery
 //= require live_record
 //= require live_record/plugins/live_dom
 //= require_tree .
