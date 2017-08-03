@@ -27,6 +27,7 @@ rake db:create db:migrate
 rails generate scaffold posts title:string content:text
 [ update `application_cable/connection.rb` to include `current_user` method ]
 [ update `models/post.rb` to whitelist `:title` and `:content` attributes ]
+rake db:migrate
 git add -A
 git commit -m 'setup'
 git push heroku master
