@@ -54,6 +54,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'jquery-rails'
-gem 'live_record', '~> 0.1.0'
+gem 'live_record', '~> 0.1.2'
 
 ruby '2.4.1'
