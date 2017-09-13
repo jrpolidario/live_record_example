@@ -2,9 +2,9 @@
   LiveRecord Example App
 </h1>
 
-<p><%= link_to 'Source Code', 'https://github.com/jrpolidario/live_record_example' %></p>
+<p><a href='https://github.com/jrpolidario/live_record_example'>Source Code</a></p>
 
-<p>Hi there! This is a basic example app that demonstrates how <strong><%= link_to 'LiveRecord', 'https://github.com/jrpolidario/live_record' %></strong> works.</p>
+<p>Hi there! This is a basic example app that demonstrates how <strong><a href='https://github.com/jrpolidario/live_record'>LiveRecord</a></strong> works.</p>
 
 <h2>Demo Instructions</h2>
 <ol>
