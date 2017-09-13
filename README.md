@@ -6,7 +6,7 @@
 
 <h2>Demo Instructions</h2>
 <ol>
-  <li>Open the following link in two separate tabs: <%= link_to posts_path, posts_path %></li>
+  <li>Open the following link in two separate tabs: <a href='https://live-record-example.herokuapp.com/posts'>/posts</a></li>
   <li>In Tab1, create a Post, then navigate back to List of Posts page</li>
   <li>In Tab2, reload that Posts page, and then the newly created post should be already visible there</li>
   <li>In Tab2, click Edit, to edit the newly created post, and update the title and content</li>
