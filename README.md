@@ -1,18 +1,36 @@
-# Steps
+<h1>
+  LiveRecord Example App
+</h1>
 
-```bash
+<p><%= link_to 'Source Code', 'https://github.com/jrpolidario/live_record_example' %></p>
+
+<p>Hi there! This is a basic example app that demonstrates how <strong><%= link_to 'LiveRecord', 'https://github.com/jrpolidario/live_record' %></strong> works.</p>
+
+<h2>Demo Instructions</h2>
+<ol>
+  <li>Open the following link in two separate tabs: <%= link_to posts_path, posts_path %></li>
+  <li>In Tab1, create a Post, then navigate back to List of Posts page</li>
+  <li>In Tab2, reload that Posts page, and then the newly created post should be already visible there</li>
+  <li>In Tab2, click Edit, to edit the newly created post, and update the title and content</li>
+  <li>After clicking the `Update` button in Tab2, you will notice that in Tab1, the title and content automatically changes even without reloading the page</li>
+  <li>Now, try deleting that post record in Tab2, you'll notice that in Tab1 it also gets removed from the page automatically.</li>
+</ol>
+
+<h2>How to reproduce this app?</h2>
+<pre>
 rails new live_record_example --database=postgresql
 cd live_record_example
 [ add `live_record`, `jquery-rails` to Gemfile ]
 [ insert `//= require jquery` to `application.js` ]
-[ change `cable.yml` to `async` from `redis` ]
+[ change `cable.yml` to `async` from `redis` (redis is preferred, but for Heroku we temporarily use `async`) ]
 bundle
 rails generate live_record:install
 rake db:create db:migrate
 rails generate scaffold posts title:string content:text
-[ update `application_cable/connection.rb` to include `current_user` ]
-[ update `models/post.rb` to include whitelist `:title` and `:content` attributes ]
+[ update `application_cable/connection.rb` to include `current_user` method ]
+[ update `models/post.rb` to whitelist `:title` and `:content` attributes ]
+rake db:migrate
 git add -A
 git commit -m 'setup'
 git push heroku master
-```
+</pre>
