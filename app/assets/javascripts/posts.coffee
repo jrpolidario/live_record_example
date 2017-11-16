@@ -4,8 +4,14 @@ LiveRecord.Model.create(
     plugins: {
       LiveDOM: true
     },
-    # See TODO: URL_TO_DOCUMENTATION for supported callbacks
-    # Add Callbacks (callback name => array of functions)
+
+    ## More configurations below. See https://github.com/jrpolidario/live_record#example-1---model
+    # belongsTo: {
+    #   user: { foreignKey: 'user_id', modelName: 'User' }
+    # },
+    # hasMany: {
+    #   books: { foreignKey: 'post_id', modelName: 'Book' }
+    # },
     # callbacks: {
     #   'on:disconnect': [],
     #   'after:update': [],
