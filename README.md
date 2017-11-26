@@ -2,7 +2,7 @@
   LiveRecord Example App
 </h1>
 
-<p>Hi there! This is a basic example app that demonstrates how <strong><a href='https://github.com/jrpolidario/live_record'>LiveRecord</a></strong> works. This does not yet demonstrate streaming new records; see the other <a href='#TODO'>React LiveRecord Example App</a> for this feature demo.</p>
+<p>Hi there! This is a basic example app that demonstrates how <strong><a href='https://github.com/jrpolidario/live_record'>LiveRecord</a></strong> works. This does not yet demonstrate streaming new records; instead see [Adj Game](http://playadj.io/) for the full-fledged app.</p>
 
 <h2>Demo Instructions</h2>
 <ol>
