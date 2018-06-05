@@ -9,5 +9,6 @@
   this.App || (this.App = {});
 
   App.cable = ActionCable.createConsumer();
+  LiveRecord.init(App.cable);
 
 }).call(this);
